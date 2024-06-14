@@ -1,5 +1,4 @@
-import React from "react";
-import OfferItem from "./OfferItem";
+import OfferItem from "../OfferItem/OfferItem";
 
 function OfferSection({ offers }) {
 	return (
@@ -10,11 +9,7 @@ function OfferSection({ offers }) {
 				</h1>
 				<div className="item-container">
 					{offers.map((offer, index) => (
-						<OfferItem
-							key={index}
-							{...offer}
-							isFirstOrSecondInRow={index % 3 === 0 || index % 3 === 1}
-						/>
+						<OfferItem key={index} {...offer} />
 					))}
 				</div>
 			</div>

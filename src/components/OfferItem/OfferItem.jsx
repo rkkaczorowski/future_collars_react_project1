@@ -1,8 +1,9 @@
 import React from "react";
+import "./OfferItem.css";
 
-function OfferItem({ isNew, serviceName, isFirstOrSecondInRow }) {
+function OfferItem({ isNew, serviceName }) {
 	return (
-		<div className={`item ${isFirstOrSecondInRow ? "first-in-row" : ""}`}>
+		<div className="item">
 			{isNew && <span className="dot"></span>}
 			<p className="service">{serviceName}</p>
 			{isNew && <span className="text">(nowość)</span>}

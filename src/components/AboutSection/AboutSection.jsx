@@ -1,5 +1,5 @@
-import React from "react";
-import AboutEmployee from "./AboutEmployee";
+import AboutEmployee from "../AboutEmployee/AboutEmployee";
+import "./AboutSection.css";
 
 function AboutSection({ employees }) {
 	return (
@@ -15,6 +15,7 @@ function AboutSection({ employees }) {
 						description={employee.description}
 						photo={employee.photo}
 						isReverse={index % 2 !== 0}
+						alignRight={employee.position === "Data Analyst"}
 					/>
 				))}
 			</div>

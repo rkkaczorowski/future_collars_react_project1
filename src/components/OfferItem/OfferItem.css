@@ -1,0 +1,48 @@
+.section-offer {
+	width: 100%;
+	background-color: #405d78;
+	color: #ffffff;
+}
+
+.item-container {
+	width: 720px;
+	height: 450px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	gap: 30px;
+}
+
+.item {
+	width: 198px;
+	height: 194px;
+	margin-bottom: 63px;
+	background-color: #f1f1f1;
+	color: #000000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	transition: transform 0.5s ease;
+}
+
+.item:hover {
+	transform: scale(1.05);
+}
+
+.dot {
+	height: 22px;
+	width: 22px;
+	top: -11px;
+	left: -11px;
+	background-color: #e07a64;
+	border-radius: 50%;
+	display: block;
+	position: absolute;
+}
+
+.service {
+	font-size: 24px;
+}
